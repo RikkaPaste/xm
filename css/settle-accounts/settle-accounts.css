@@ -1,0 +1,477 @@
+.App {
+	width: 100%;
+	position: static;
+	color: #3c3c3c;
+	/* 	user-select: none;
+	touch-action: manipulation; */
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.header-App {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(242, 242, 242);
+	z-index: 5;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.headerse {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.5rem;
+	margin: auto;
+}
+
+.settle-center {
+	position: relative;
+	top: 1.5rem;
+	max-width: 700px;
+	margin: auto;
+}
+
+.cat {
+	font-size: .4rem;
+}
+
+.top {
+	align-items: center;
+	justify-content: center;
+	height: 1.2rem;
+	background: #fbf7e7;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 .3rem;
+	transition: all .3s;
+}
+
+.bell {
+	margin-left: .25rem;
+	width: .4rem;
+	height: .43rem;
+}
+
+.swiper-slide {
+	font-size: .24rem;
+	display: flex;
+	justify-content: left;
+	padding: 0 .2rem;
+	color: #cf7433;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.cross {
+	margin-left: .22rem;
+	margin-right: .21rem;
+	width: .3rem;
+	height: .3rem;
+	cursor: pointer;
+}
+
+.settle {
+	background: #fff url(../../img/settle-accounts/bd1.png) 0 0 repeat-x;
+	background-size: .52rem .1rem;
+	padding: .4rem;
+	position: relative;
+	border-bottom: .03rem solid rgba(0, 0, 0, .2);
+}
+
+.site {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.site div {
+	width: 100%;
+	padding: .1rem;
+}
+
+.site span:nth-child(2) {
+	padding-left: .4rem;
+}
+
+.site span {
+	font-size: .45rem;
+	font-weight: 600;
+}
+
+p[name="site"] {
+	font-size: .35rem;
+}
+
+.site::after {
+	content: "";
+	position: absolute;
+	right: .32rem;
+	top: 50%;
+	width: .25rem;
+	height: .25rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transform: translate3d(0, -50%, 0) rotate(135deg);
+}
+
+.settle-tj,
+.invoice {
+	border-top: .03rem solid rgba(0, 0, 0, 0.1);
+	border-bottom: .03rem solid rgba(0, 0, 0, 0.1);
+	/* 	display: flex;
+	flex-wrap: wrap; */
+}
+
+ul {
+	overflow: hidden;
+	height: 10.7rem;
+	list-style: none;
+	transition: all .3s;
+}
+
+ul li {
+	margin: 0 .7rem;
+	border-bottom: 1px solid #eee;
+}
+
+.item.on {
+	background-image: url(../../img/settle-accounts/check_press.png);
+	padding-right: .6rem;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-size: .5rem .5rem;
+}
+
+.item {
+	padding-right: .6rem;
+	background-image: url(../../img/settle-accounts/check_normal.png);
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-size: .5rem .5rem;
+	display: flex;
+	align-items: center;
+}
+
+.item a.alipaywap {
+	background: url(../../img/settle-accounts/pay_zfb2.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.micash_wap {
+	background: url(../../img/settle-accounts/micash_wap.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.weixin_wap {
+	background: url(../../img/settle-accounts/pay_wx.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.unionpaywap {
+	background: url(../../img/settle-accounts/pay_yl1.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+
+.item a.bestpay_wap {
+	background: url(../../img/settle-accounts/pay_yzf.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.micashcreditinstallment_wap {
+	background: url(../../img/settle-accounts/pay_micashcreditinstallment_wap.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.antinstal_m {
+	background: url(../../img/settle-accounts/pay_antinstalment.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+.item a.mifinanceinstal_m {
+	background: url(../../img/settle-accounts/pay_mifinanceinstal.png) 0 50% no-repeat;
+	background-size: .8rem .8rem;
+}
+
+
+
+.item a {
+	display: block;
+	font-size: .4rem;
+	line-height: .9rem;
+	padding: .2rem 0 .2rem 1.2rem;
+	color: #333;
+	text-decoration: none;
+}
+
+.item .primary {
+	color: #ff6700;
+	border-radius: .17rem;
+	border: 1px solid #ff6700;
+	font-size: .2rem;
+	padding: 0 .1rem;
+	line-height: .4rem;
+	margin-left: .2rem;
+}
+
+.gather {
+	text-align: center;
+	line-height: 1.2rem;
+	color: rgba(0, 0, 0, .4);
+	position: relative;
+}
+
+.ga-t {
+	position: relative;
+	font-size: .35rem;
+}
+
+/* .ga-t:after {
+	content: "";
+	position: absolute;
+	right: -.5rem;
+	top: 50%;
+	width: .25rem;
+	height: .25rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transform: translate3d(0, -20%, 0) rotate(45deg);
+}
+ */
+.rx {
+	position: absolute;
+	width: .25rem;
+	height: .25rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transition: all 0.3s;
+	top: 45%;
+	margin-left: .5rem;
+}
+
+.rax45 {
+	transform: rotateZ(45deg);
+}
+
+.rax225 {
+	top: 35%;
+	transform: rotateZ(225deg);
+}
+
+.invoice {
+	position: relative;
+}
+
+.yf-item {
+	margin: 0 .7rem;
+	border-bottom: 1px solid #eee;
+	/* line-height: 1.3rem; */
+	padding: .35rem 0;
+	font-size: .4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.yf-item span {
+	font-weight: 600;
+}
+
+.yf-item p {
+	display: inline-block;
+	color: rgba(0, 0, 0, .4);
+}
+
+/* 
+.person {
+	position: relative;
+	margin-right: .6rem;
+} */
+/*
+.person::after {
+	content: "";
+	position: absolute;
+	right: -.5rem;
+	top: 50%;
+	width: .25rem;
+	height: .25rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transform: translate3d(0, -70%, 0) rotate(225deg);
+}
+ */
+.person {
+	width: .25rem;
+	height: .25rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transition: all 0.3s;
+	margin-left: .5rem;
+	display: block;
+}
+
+.yf-item img {
+	width: 1rem;
+}
+
+.xm {
+	color: black !important;
+	font-size: .30rem;
+	padding: 0 .2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.sp {
+	font-size: .4rem;
+	display: flex;
+	align-items: center;
+}
+
+.sp p {
+	color: rgba(0, 0, 0, .5);
+	font-size: .35rem;
+}
+
+.yf-items span {
+	font-weight: 600;
+}
+
+.yf-items {
+	margin: 0 .7rem;
+	border-bottom: 1px solid #eee;
+	padding: .35rem 0;
+	font-size: .4rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.yf-items div {
+	width: 100%;
+}
+
+.yf-items div span {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.bottom {
+	position: fixed;
+	height: auto;
+	width: 100%;
+	bottom: 0;
+	z-index: 10;
+	background: white;
+}
+
+.distribution-details {
+	padding: .15rem .3rem;
+	background: #fbf3c4;
+	color: #b57842;
+	padding: .12rem, .2rem;
+	opacity: .7;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: .3rem;
+}
+
+.box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.6rem;
+}
+
+.box div {
+	width: 50%;
+	height: 100%;
+}
+
+.jg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	font-size: .4rem;
+}
+.jg span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.jg-s {
+	font-weight: 600;
+}
+
+.button {
+	display: block;
+	background-color: #ff5722;
+	text-align: center;
+	line-height: 1.55rem;
+	border: 1px solid #ff5722;
+	font-size: .35rem;
+	color: #fff;
+}
+
+.yh-item {
+	height: 0;
+	background: rgb(246, 246, 246);
+	padding: 0 .7rem;
+	overflow: hidden;
+	transition: all .3s;
+}
+
+.yh {
+	padding-top: .2rem;
+	color: rgb(0, 0, 0, .6);
+	font-size: .38rem;
+}
+
+.in {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: .2rem;
+	height: 1rem;
+}
+
+.input {
+	width: 6.5rem;
+	border: 1px solid #e0e0e0;
+	display: flex;
+}
+
+.input input {
+	width: 100%;
+	height: .68rem;
+	border: 0;
+	padding: .15rem .3rem;
+}
+
+input[type="button"] {
+	width: 1.5rem;
+	height: 100%;
+	margin-left: .2rem;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+	text-align: center;
+}
+
+

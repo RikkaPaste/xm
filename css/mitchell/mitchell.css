@@ -1,0 +1,215 @@
+.bottom {
+	width: 100%;
+	background: white;
+	position: fixed;
+	height: 1.5rem;
+	z-index: 100;
+	bottom: 0;
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	display: flex;
+}
+
+.bottom-sum-up {
+	width: 90%;
+	margin: auto;
+	height: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-home {
+	line-height: 1.2rem;
+}
+
+.bottom a {
+	text-decoration: none;
+}
+
+.bottom-home-baimg {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-size: 100% 100%;
+	margin: .27rem auto 0;
+}
+
+.sy {
+	background-image: url(../../img/sytb2.png);
+}
+
+.fl {
+	background-image: url(../../img/fl.png);
+}
+
+.bottom-home span {
+	display: block;
+	font-size: .1rem;
+	line-height: .3rem;
+	padding: .2rem;
+	text-align: center;
+	color: #3C3C3C;
+}
+
+a:nth-child(3) .bottom-home:first-child span {
+	display: block;
+	font-size: .1rem;
+	line-height: .3rem;
+	padding: .2rem;
+	text-align: center;
+	color: rgba(255, 0, 0, .8);
+}
+
+
+.mq {
+	background-image: url(../../img/mq2.png);
+}
+
+.gwc {
+	background-image: url(../../img/gw.png);
+}
+
+.wd {
+	background-image: url(../../img/wd.png);
+}
+
+
+.APP-total {
+	height: auto;
+	position: static;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	height: 1.1rem;
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	background-color: #FFFFFF;
+}
+
+.header-total {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.left img {
+	height: .7rem;
+	width: .7rem;
+}
+
+.center {
+	width: 80%;
+	height: 1.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.center-x {
+	width: 100%;
+	display: flex;
+	overflow-x: auto;
+	align-items: center;
+	height: 100%;
+	white-space: nowrap;
+}
+
+.center-x a {
+	padding: 0 .32rem;
+	font-size: .4rem;
+	font-weight: 700;
+	line-height: .78rem;
+	color: #999;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	text-decoration: none;
+	position: relative;
+}
+
+.center::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	width: .35rem;
+}
+
+.tev{
+	color: #333!important;
+}
+.tev::after{
+	    display: block;
+	    content: "";
+	    width: .16rem;
+	    height: .05rem;
+	    background: #333;
+	    border-radius: .3rem;
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    z-index: 1;
+	}
+.right{
+	width:.9rem;
+	height: .9rem;
+}
+.right a {
+	display: block;
+	width: .9rem;
+	height: .9rem;
+	background: url(../../img/mitchell/small_bell.88e26cc7bc.png) 50% no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+
+.bottom-total{
+	width:100%;
+	/* background: aqua; */
+	position: relative;
+	height:20rem;
+	margin:1.2rem auto;
+}
+
+.issue-button img{
+	position:fixed;
+	width:2rem;
+	height:2rem;
+	bottom:2rem;
+	right:.3rem;
+}
+
+
+
+.bubble {
+	position: absolute;
+	min-width: .45rem;
+	line-height: .45rem;
+	height: .45rem;
+	box-sizing: border-box;
+	padding: 0 .05rem;
+	font-size: .2rem;
+	overflow: hidden;
+	text-align: center;
+	border-radius: .28rem;
+	background: #ed4d41;
+	color: #fff;
+	top: 0;
+	left: 50%;
+	transform: translate3d(.1rem, -10%, 0);
+	font-style: normal;
+	display: none;
+}
+
+.bottom-home {
+	position: relative;
+}

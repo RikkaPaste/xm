@@ -1,0 +1,205 @@
+.component-below-The-average-Book img {
+	width: 100%;
+	height: 1.2rem;
+	padding: .2rem 0 0 0;
+}
+
+.component-below-The-average-Three-Book {
+	width: 100%;
+	padding: .12rem 0 0 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.component-img-Book-NOE {
+	width: 98%;
+	height: 8rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: white;
+}
+
+.component-img-Book-NOE img {
+	width: 100%;
+}
+
+.component-tariff-Book-NOE {
+	width: 90%;
+}
+
+.component-img-Book-TWO {
+	width: 47%;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: white;
+	border-radius: 4%;
+}
+
+.Book-price {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Book-price span {
+	font-size: .45rem;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.price {
+	font-size: 0.37rem !important;
+	color: #ea625b;
+
+}
+.buy{
+	height:.8rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.buy span{
+	font-size: .2rem;
+	color: rgba(0, 0, 0, .54);
+	line-height: 1rem;
+	display: block;
+}
+
+.buy button {
+	width: 30%;
+	height:.8rem;
+	background: #ea625b;
+	border-radius: .05rem;
+	color: #fff;
+	font-size: .24rem;
+	border: 0;
+	padding: .10rem 0;
+	font-weight: 700;
+}
+
+
+
+.component-tariff-Book-TWO {
+	width: 80%;
+}
+
+.component-tariff-Book-TWO span {
+	font-size: .33rem;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.component-img-Book-TWO img {
+	width: 100%;
+	border-radius: 4% 4% 0 0;
+}
+
+.component-img-Book-Three{
+	width: 47%;
+	height: 7.5rem;
+	background: white;
+	border-radius: 4%;
+}
+.component-img-Book-Three img{
+	width:100%;
+	border-radius: 4% 4% 0 0;
+}
+
+.component-img-Book {
+	width: 47%;
+	background-color: white;
+	border-radius: 4%;
+	height: 7.5rem;
+}
+
+.component-img-Book img {
+	width: 100%;
+	border-radius: 4% 4% 0 0;
+}
+
+.component-tariff-Book {
+	width: 80%;
+	margin: .18rem auto;
+}
+
+.component-tariff-Book span {
+	font-size: .38rem;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.brief-Book {
+	margin-top: .06rem;
+	font-size: .28rem;
+	line-height: .3rem;
+	color: rgba(0, 0, 0, .54);
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.price-Book {
+	margin-top: .2rem;
+	font-size: .4rem;
+	line-height: .3rem;
+	color: rgba(255, 0, 0, 1);
+	text-align: center;
+	font-weight: bolder;
+}
+
+.price-Book span {
+	/* 恢复原板块 */
+	display: inline;
+	font-size: .3rem;
+}
+
+.price-Book s {
+	font-size: .2rem;
+	color: rgba(139, 129, 123, 1.0);
+	text-decoration: line-through;
+}
+
+.component-tariff-Book button {
+	width: 60%;
+	background: #ea625b;
+	border-radius: .05rem;
+	color: #fff;
+	font-size: .24rem;
+	border: 0;
+	padding: .2rem 0;
+	font-weight: 700;
+	display: block;
+	margin: .16rem auto;
+}
+
+.Book-recommend{
+	width:100%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+}
+.Book-recommend img{
+	width:50%;
+}

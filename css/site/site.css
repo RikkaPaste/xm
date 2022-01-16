@@ -1,0 +1,134 @@
+/* 收货地址 */
+
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.App {
+	width: 100%;
+	position: static;
+	color: #3c3c3c;
+	user-select: none;
+	touch-action: manipulation;
+}
+
+.header-App {
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	background: white;
+}
+
+.headerse {
+	width: 90%;
+	height: 1.5rem;
+	margin: auto;
+}
+
+.settle-center {
+	position: relative;
+	top: 1.5rem;
+	max-width: 700px;
+	margin: auto;
+}
+
+.cat {
+	font-size: .4rem;
+}
+
+.top {
+	height: 1.2rem;
+	background: #fbf7e7;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0 .3rem;
+	transition: all .3s;
+}
+
+.total {
+	position: relative;
+	top: 1.5rem;
+	max-width: 700px;
+	margin: auto;
+}
+
+.site {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding: .4rem;
+}
+
+.site div {
+	padding: .1rem;
+	width: 100%;
+}
+
+.site span:nth-child(2) {
+	padding-left: .1rem;
+}
+
+.site span {
+	font-size: .4rem;
+}
+
+p[name="site"] {
+	font-size: .35rem;
+}
+
+.dz {
+	position: relative;
+	color: rgba(0, 0, 0, .5);
+}
+
+.dz::after {
+	content: "";
+	position: absolute;
+	right: .32rem;
+	top: 50%;
+	width: .2rem;
+	height: .2rem;
+	border-left: 1px solid currentColor;
+	border-top: 1px solid currentColor;
+	transform: translate3d(0, -50%, 0) rotate(135deg);
+}
+
+em {
+	color: #fff;
+	display: inline-block;
+	padding: .03rem .06rem;
+	font-size: .2rem;
+	font-style: normal;
+	margin-left: .22rem;
+	background-color: #ff5934;
+	border-radius: .04rem;
+	line-height: .35rem;
+}
+
+.btn-gradient {
+	line-height: 1.1rem;
+	background: -webkit-linear-gradient(44deg, #ff7d00, #ff5934);
+	background: linear-gradient(46deg, #ff7d00, #ff5934);
+	border-radius: .55rem;
+	width: 90%;
+	font-size: .37rem;
+	font-weight: 700;
+	color: #fff;
+	margin:auto;
+	text-align: center;
+}
+
+.bottom {
+	position: fixed;
+	width:100%;
+	background: white;
+	bottom:0;
+	height:1.5rem;
+	display: flex;
+	align-items: center;
+}

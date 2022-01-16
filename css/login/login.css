@@ -1,0 +1,570 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.APP {
+	width: 100%;
+	height: auto;
+	position: static;
+	height: auto;
+	white-space: nowrap;
+	user-select: none;
+}
+
+/* 设置文本可选 */
+input{
+	user-select:auto;
+}
+
+.ALL-APP{
+	width:100%;
+	height: auto;
+/* 	position: relative; */
+}
+.APP-total {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 2rem;
+	margin: auto;
+}
+
+.APP-header {
+	height: 1.3rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: .35rem;
+	align-items: center;
+	background-color: white;
+}
+
+.APP-language {
+	width: 3rem;
+	height: 1rem;
+	color: rgba(0, 0, 0, 50%);
+	cursor: pointer;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.APP-language span {
+	width: 1.5rem;
+	text-align: center;
+	font-size: 0.35rem;
+}
+
+.MuiSvgIcon-root {
+	color: rgba(0, 0, 0, 50%);
+	font-size: 1.1rem;
+	fill: currentColor;
+	width: .5em;
+	height: .5em;
+	display: inline-block;
+	font-size: 1.5rem;
+	transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	flex-shrink: 0;
+	user-select: none;
+}
+
+.APP-help {
+	width: 3rem;
+	height: .6rem;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: space-around;
+	color: rgba(0, 0, 0, 50%);
+	font-size: .35rem;
+}
+
+.MuiSvg-roos {
+	color: rgba(0, 0, 0, 50%);
+	font-size: 1.1rem;
+	fill: currentColor;
+	width: .25em;
+	height: .25em;
+	display: inline-block;
+	font-size: 1.5rem;
+	transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	flex-shrink: 0;
+	user-select: none;
+	margin: .1rem 0 auto;
+
+}
+
+
+.APP-header-total {
+	width: 100%;
+	height: 1.3rem;
+	position: fixed;
+	margin: auto;
+	z-index: 2;
+}
+
+
+.APP-LOGImg {
+	width: 100%;
+	background-image: url(../../img/login/background.d3d7d2dd.png);
+	background-size: auto 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.MUN {
+	width: 58.181818px;
+	height: 58.181818px;
+	margin: auto;
+}
+
+.MUN-brief-comment {
+	width: 100%;
+	height: .5rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: .35rem;
+	padding: .3rem;
+	margin: 10px auto;
+}
+
+.MI-register {
+	width: 80%;
+	font-size: .45rem;
+	padding: .2rem 0 .5rem .8rem;
+	font-weight: 550;
+	/* 字体间距 */
+	letter-spacing: .05rem;
+}
+
+.APP-bottom-total {
+	width: 100%;
+	height: 100%;
+}
+
+.ID-import {
+	height: 100%;
+	height: 1.3rem;
+	border-radius: .33rem;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 .4rem !important;
+	font-weight: 600;
+	position: relative;
+	font-size: .4rem;
+}
+
+.bottom-total {
+	width: 80%;
+	height: auto;
+	padding: .5rem;
+	margin: auto;
+}
+
+.ID {
+	width: 100%;
+}
+
+.ID-import span::after {
+	content: "";
+	position: absolute;
+	width: .2rem;
+	height: .2rem;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	transform: rotateZ(-45deg);
+	margin-left: .1rem;
+	top: .55rem;
+}
+
+.ID-import input {
+	position: absolute;
+	width: 6rem;
+	height: 100%;
+	border: 0;
+	background: none;
+	left: 2rem;
+	border-radius: 0 .33rem .33rem 0;
+}
+
+.APP-agreement {
+	width: 100%;
+	height: 1rem;
+	margin: .8rem auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.APP-agreement input {
+	width: .5rem;
+	height: .5rem;
+}
+
+.APP-agreement p {
+	display: block;
+	font-size: .3rem;
+	padding: .2rem;
+	letter-spacing: .05rem;
+	white-space:pre-wrap;
+}
+
+.APP-agreement p a {
+	color: #4b93ff;
+}
+
+.KS{
+	line-height:1rem;
+	background-color:white;
+	font-size: .27rem;
+	text-align: center;
+	border-radius: .2rem;
+	box-shadow: 1px 1px .1rem #333333;
+	z-index: 2;
+	position: fixed;
+	left: 50%;
+	bottom:1rem;
+	transform:translate(-50%);
+	padding:0 .2rem;
+}
+.ID-submit .submit {
+	width: 100%;
+	line-height: 1.2rem;
+	border-radius: .5rem;
+	border: 0;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(11, 132, 255, 0.3);
+	text-align: center;
+	font-size: .4rem;
+}
+
+.forget {
+	width: 100%;
+	padding-top: .5rem;
+	color: #4b93ff;
+	font-size: .3rem;
+}
+
+.login {
+	width: 100%;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+	font-size: .3rem;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.else-login {
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: .5rem;
+	color: rgba(0, 0, 0, 20%);
+}
+
+/* 登录 */
+.else-login span {
+	width: 5rem;
+	height: .5rem;
+	text-align: center;
+	align-items: center;
+	font-size: .3rem;
+}
+
+.else-login span::before {
+	flex: 1;
+	content: " ";
+	margin-right: 0.798611rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 15%);
+	position: relative;
+}
+
+.else-login span::after {
+	flex: 1;
+	content: " ";
+	margin-right: 0.798611rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 15%);
+	position: relative;
+}
+
+.Choose-other {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	margin-top: -1rem;
+}
+.ID-User{
+	width:100%;
+}
+.ID-import-User input {
+	width: 6rem;
+	height: 100%;
+	border: 0;
+	background: none;
+}
+.ID-import-User{
+	height: 1.3rem;
+	border-radius: .33rem;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 .4rem !important;
+	font-weight: 600;
+	position: relative;
+	font-size: .4rem;
+}
+
+
+.ID-import-pwd{
+	height: 1.3rem;
+	border-radius: .33rem;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 .4rem !important;
+	font-weight: 600;
+	position: relative;
+	font-size: .4rem;
+	margin-top: .3rem;
+}
+
+.ID-import-pwd input{
+	width:6rem;
+	height:100%;
+	border: 0;
+	background: none;
+}
+
+
+.ID-submit .submitTWO {
+	width: 100%;
+	line-height: 1.2rem;
+	border-radius: .5rem;
+	border: 0;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(11, 132, 255, 0.3);
+	text-align: center;
+	font-size: .4rem;
+}
+
+
+/* 注册 */
+
+.register-APP{
+	width:100%;
+	height: auto;
+}
+
+.nouvelle-register{
+	width:100%;
+	margin:.2rem auto;
+	font-size: .35rem;
+	letter-spacing: .02rem;
+	display: flex;
+	justify-content: space-between;
+	color:rgba(11, 132, 255, 0.7);
+}
+
+.ID-register{
+	width:100%;
+	margin:.2rem auto;
+}
+
+.ID-import-register{
+	height: 1.3rem;
+	border-radius: .33rem;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 0 .4rem !important;
+	font-weight: 600;
+	position: relative;
+	font-size: .4rem;
+	margin-top: .3rem;
+}
+.ID-import-register span{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.ID-import-register input{
+	width:4.2rem;
+	height:100%;
+	border: 0;
+	background: none;
+	padding-left:.8rem;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.security-code-register{
+	height: 100%;
+	height: 1.3rem;
+	border-radius: .33rem;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 .4rem !important;
+	font-weight: 600;
+	position: relative;
+	font-size: .4rem;
+	margin-top: .4rem;
+}
+
+.security-code-register input{
+	position: absolute;
+	width: 6rem;
+	height: 100%;
+	border: 0;
+	background: none;
+	left:.3rem;
+	border-radius: 0 .33rem .33rem 0;
+	padding-left: .3rem;
+}
+
+.one::after {
+	content: "";
+	position: absolute;
+	width: .2rem;
+	height: .2rem;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	transform: rotateZ(-45deg);
+	right:.5rem;
+	top: .55rem;
+}
+
+.two::after{
+	content: "";
+	position: absolute;
+	width: .2rem;
+	height: .2rem;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	transform: rotateZ(-45deg);
+	left:2.8rem;
+	top: .55rem;
+}
+
+
+
+.ID-submit-code .submitregister {
+	width: 100%;
+	line-height: 1.2rem;
+	border-radius: .5rem;
+	border: 0;
+	color: rgba(255, 255, 255,1);
+	background-color: rgba(11, 132, 255, 0.3);
+	text-align: center;
+	font-size: .4rem;
+}
+
+.yj{
+	width:.5rem;
+	height:.5rem;
+	 position: absolute;
+	 right:.3rem;
+	 color: rgba(0,0,0,0.1);
+	 transition: all .3s;
+}
+
+
+.XXT {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid rgba(0, 0, 0, 10%);
+
+}
+
+.fz-xs {
+	font-size: .5rem;
+	display: flex;
+	flex-wrap: wrap;
+	padding: .6rem .3rem .5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.ts-messages {
+	width: 100%;
+	text-align: center;
+	font-size: .4rem;
+	padding-top: .6rem;
+	color:rgba(255, 0, 0, 0.65);
+}
+
+.agreement-two {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .3);
+	position: fixed;
+	top: 0;
+	transition-duration: .5s;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.agreement-confirms {
+	width: 90%;
+	max-width: 650px;
+	height: auto;
+	background: white;
+	border-radius: .2rem;
+	margin: auto;
+	margin-top: calc(100vh * 0.5 - 100px);
+}
+
+
+.user-login{
+	width: 100%;
+}
+.login-total{
+	transform: translateX(100%);
+	display: -webkit-box;
+	transition: all .4s;
+}
+.user-login-App{
+	overflow: hidden;
+}
+
+.jss17 {
+	padding: .2rem 0 0 .5rem;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+	color: rgba(0, 0, 0, 0.54);
+	font-size: .34rem;
+}
+.indextsx{
+display: flex;
+width: 2.1rem;
+flex-wrap: nowrap;
+justify-content: center;
+}
+.indextsx div{
+	width:.7rem;
+	text-align: center;
+	color:white;
+}

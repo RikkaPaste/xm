@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- 需要放在头部 -->
+		<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<title>小米商城-小米官方网站，小米手机、红米手机正品专卖</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"
+			media="(min-device-width:320px) and (max-device-width:720px)" />
+		<link rel="stylesheet" type="text/css" href="css/settle-accounts/settle-accounts.css" />
+		<link rel="icon" type="text/css" href="img/favicon.ico" />
+	</head>
+	<body>
+		<div class="App">
+			<div class="header-App">
+				<div class="headerse">
+					<a href="#" onclick="go()">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABfUlEQVR4AWL4//8/oH1zzA4gCMJgbNv239i2beP+R8gXczpmV79XB9ja3UEDDJCAIAQhCEF/TBAgCEEIUkSKFrEoahD0VFCdOLtmWxQh6E5Okzh7xCyC7n85T+lyL0jREJDT434NMr6cAde7mLHmXDDkfptX1AfkjPk+B9lyRn0fFO01Z8r9SVrRGJAzLaL9CrJ/q4XvlnPBX5IT4/qyqqgJyFkWcX5v8/aXsyKSXKc7FLUBORuGHAeC7K18y5DjQ5CiOiBnU6T6zSjav9WWSPebcrV3qz2R4Tcnba85hyLTb9Le/nL2RY7fqsbLcnJdl30MOSeiwG9dzD4hX1DitnCoSBDlhpwy15VVRY9YDvxWhd/xYAjiF2ORLnYviG3+45dTDopcNbisftvvRrrjlQmzNAeCSLmStP9OSZR9KBx+6cK95LH0TPMC7S80UNGCRxMnbcA0kg8iiFEEhlkYh2Kg7vd/STvPj2Qy1NvKUO+PgCAEIQhBCEIQghAE53kdVfEUUHFYAAAAAElFTkSuQmCC"
+							style="height:.7rem;width:.7rem">
+					</a>
+					<div class="cat">
+						<span>用户结算</span>
+					</div>
+					<div style="width:.9rem;height: .5rem;"></div>
+				</div>
+			</div>
+			<!-- 结算选项 -->
+			<div class="settle-center">
+				<div class="top">
+					<img src="data:image/png;base64,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"
+						class="bell">
+
+					<div class="swiper-slide">
+						<div>套装版充电套装显示0.01元，此价格非实际售价，仅作价格展示，实际价格以商城销售价为准</div>
+					</div>
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACqklEQVRIS62Wv2sTYRjHv89dLCmmVQdddHFwsaKLm0tsFMzi4qQoFKGEFixop6KRI7EtEQL+wIoILi76D9ghKWTo4CIoaQap4qaD+INaTZrce4+8MUnfJHdv7q7emLt7Pvk+932+z0vlTIIBgAAbRNO7hf38sFWqyd/+x7WaOzWypzF8F8wpMIjawFZxAaK5qNj15Ii1vLFT4Ns74wdNNrJgnvinCaC1TKLBQEQp/gNEizFhP9yJ0hYsB/Alqaxdn9ayZyaZ+TEAU4EKIpo6li4+DaOy2cb68H2AJ1QYCFX6ZMWjm2bkGpjnAOzr/BPAJmAWjng2ZpU2/YLXF5L7a04jA4dT7TYCYIA+MvFUU+q6lRytmY0UmBdVpQTaAHieHLHkB/ouFz9k1CMLAF/uUgb6QIZx46tdX+70Vir9bUaugHlJ/aYSSuD02O2VBzqVTWWikQfzRaieIFQZOP9NiNJpqyS71n1VMokZBmUZPKq2VzcyvdZvvkdgYvoiDFw4cav4WqnVA7TiMTbMaYBuqlAAriPjZn0JA9N7k2j2aLrwSiX0KZQ3K1Y8BsO8ykBeNzKe1gd9Nogm/xz4XjiZetMYCGw/oBuZn0PVF17Wd4jG1Tb6BupGBkCBgXNu1j+eXil6Gcy1perDXiPTX3Db+tKNoYHyRa+R6RTtsb5ufAYqbL8srb93K/qSgWTPN2E2KB+z7bSf7PUFdLV+twzfW2Yg0Nv6YBmQQbeMFqhLfRA9gsPXg24ZT+Cg1B8RYjXMlnEF+kl9af0wW6YP6Df1298u6JbpAgZJ/bBbpgMMmvp9QJ9bpgkMk/puaeJny5DO+rrU18WXbstQJXv2nsPOTNDU1wG1B7NyJrEFYGi7gL/U1wHlPc+RKWcSvwDEWueQrgPPoKKD7ruNzF9QNBZXDQz3YwAAAABJRU5ErkJggg=="
+						class="cross">
+				</div>
+
+				<!-- 选择付款方式 -->
+				<div class="total-settle">
+					<div class="settle">
+						<div class="site">
+							<div>
+								<span name="user">邓明猴</span>
+								<span name="phone">1777***13121</span>
+							</div>
+							<div>
+								<p name="site">浙江 金华 义乌市 义乌人民法院</p>
+							</div>
+						</div>
+					</div>
+					<div style="height:.3rem;background:rgb(246, 246, 246);"></div>
+					<div class="settle-tj">
+						<ul class="xz">
+							<li>
+								<div class="item on"><a class="alipaywap">支付宝</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="micash_wap">小米钱包</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="weixin_wap">微信支付</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="unionpaywap">银联支付</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="bestpay_wap">翼支付</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="micashcreditinstallment_wap">信用卡分期</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item"><a class="antinstal_m">花呗分期</a>
+									<!---->
+								</div>
+								<!---->
+							</li>
+							<li>
+								<div class="item">
+									<a class="mifinanceinstal_m">小米分期</a>
+									<div class="subtitle primary">享24期免息</div>
+								</div>
+								<!---->
+							</li>
+						</ul>
+						<div class="gather"><span class="ga-t">收取其他支付方式</span><span class="rax45 rx"></span></div>
+					</div>
+					<div style="height:.3rem;background:rgb(246, 246, 246);"></div>
+					<!-- 发票 -->
+					<div class="invoice">
+						<div class="yf-item">
+							<span>运费</span>
+							<p>包邮</p>
+						</div>
+						<div class="yf-item">
+							<span>电子普通发票</span>
+							<div style="display: flex;align-items: center;">
+							<p>个人</p>
+							<p class="person rax225"style="margin-left: .2rem;"></p>
+							</div>
+						</div>
+
+						<div class="yf-item dyh">
+							<span>优惠卷</span>
+							<div>
+							<p class="person rax225"></p>
+							</div>
+						</div>
+						<div class="yh-item">
+							<div class="yh">使用优惠券码</div>
+							<div class="in">
+								<div class="input">
+									<input placeholder="请输入优惠券码" />
+								</div>
+								<input type="button" value="确定" />
+							</div>
+						</div>
+					</div>
+					<div style="height:.3rem;background:rgb(246, 246, 246);"></div>
+					<div class="invoice">
+						<div class="yf-item">
+							<img src="img/settle-accounts/pms_1617008590.88834809.jpg" />
+							<p class="xm">Xiaomi 11 Ultra 12GB+256GB 陶瓷白</p>
+							<span>5999.00</span>
+						</div>
+					</div>
+					<div style="height:.3rem;background:rgb(246, 246, 246);"></div>
+					<div class="invoice">
+						<div class="yf-items">
+							<div><span class="sp">商品价格:&nbsp;<p> 5999.00</p></span></div>
+							<div><span class="sp">配送费用:&nbsp;<p> 0.00</p></span></div>
+						</div>
+					</div>
+					<div style="height:4rem;"></div>
+				</div>
+
+			</div>
+
+			<!-- 结算按钮 -->
+			<div class="bottom">
+				<div class="distribution-details">
+					<span>配送至: 浙江 金华市 义乌市 义乌人民法院</span>
+				</div>
+				<div class="box">
+					<div class="jg">
+						<span>共一件</span>&nbsp;&nbsp;
+						<span>合计: </span>&nbsp;
+						<span class="jg-s">5999.00</span>
+					</div>
+					<div class="button">去付款</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/settle-accounts.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+</html>
