@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* 移动端屏幕最小宽度不小于320px */
+	min-width: 320px;
+	/* 移动端屏幕最大宽度不大于750px */
+	max-width: 720px;
+	/* 行高使用纯数字表示行高，默认是1.2
+	 行高的实际像素=数值*默认font-size(16px)
+	 如果是1.5，最终的行高是1.5*16=24px*/
+	line-height:1.5;
+	font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;	
+}
+
+html {
+	background-color: white;
+}

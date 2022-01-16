@@ -1,0 +1,145 @@
+/* 智能页样式 */
+.bran1 {
+	width: 100%;
+	height: 5rem;
+/* 	background-image: url(../img/smart/rb1.jpg); */
+	background-size: 100% 100%;
+	transition: all 1s;
+	overflow: hidden;
+	display: flex;
+	flex-wrap:nowrap;
+}
+
+.bran1 div{
+	width:100%;
+	transition: all 1s;
+	display: flex;
+	flex-wrap:nowrap;
+}
+
+/* 轮播1展示结果 */
+/* .rb1 {
+	background-image: url(../img/smart/rb1.jpg);
+}
+
+.rb2 {
+	background-image: url(../img/smart/rb2.jpg);
+}
+
+.rb3 {
+	background-image: url(../img/smart/rb3.jpg);
+}
+
+.rb4 {
+	background-image: url(../img/smart/rb4.jpg);
+}
+
+.rb5 {
+	background-image: url(../img/smart/rb5.jpg);
+} */
+
+.component-below-The-average-smart {
+	width: 100%;
+	height: 3.6rem;
+	background-color: #f3f3f3;
+	padding: .1rem 0 0 0;
+}
+
+.component-below-The-average-smart img {
+	width: 100%;
+	height: 1.7rem;
+	padding: .06rem 0 0 0;
+}
+
+.component-below-The-average-Three-smart {
+	width: 100%;
+	padding: .12rem 0 0 0;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.component-img-smart {
+	width: 33%;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.component-img-smart img {
+	width:100%;
+	border-radius: 3%;
+}
+
+.component-tariff-smart {
+	width: 80%;
+	height: 30%;
+	padding: .2rem;
+}
+
+.component-tariff-smart span {
+	font-size: .33rem;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.brief-smart {
+	margin-top: .06rem;
+	font-size: .28rem;
+	line-height: .3rem;
+	color: rgba(0, 0, 0, .54);
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.price-smart {
+	margin-top: .2rem;
+	font-size: .4rem;
+	line-height: .3rem;
+	color: rgba(255, 0, 0, 1);
+	text-align: center;
+	font-weight: bolder;
+}
+
+.price-smart span {
+	/* 恢复原板块 */
+	display: inline;
+	font-size: .3rem;
+}
+
+.price-smart s {
+	font-size: .2rem;
+	color: rgba(139, 129, 123, 1.0);
+	text-decoration: line-through;
+}
+
+.component-tariff-smart button {
+	width: 80%;
+	background: #ea625b;
+	border-radius: .05rem;
+	text-align: center;
+	color: #fff;
+	font-size: .24rem;
+	border: 0;
+	padding: .2rem 0;
+	font-weight: 700;
+	margin: .2rem .35rem 0;
+}
+.component-below-The-average-smart-jd{
+		background-color: rgb(240, 241, 243);
+}
+.component-below-The-average-smart-jd img {
+	width: 100%;
+	height: 1.2rem;
+}

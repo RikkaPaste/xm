@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- 需要放在头部 -->
+		<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<title>小米商城-小米官方网站，小米手机、红米手机正品专卖</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" media="(min-device-width:320px) and (max-device-width:720px)"/>
+		<link rel="stylesheet" type="text/css" href="css/search/max720.css" media="(min-device-width:720px)"/>
+		<link rel="stylesheet" type="text/css" href="css/search/search.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/min750.css" media="(min-device-width:751px)"/> -->
+		<link rel="icon" type="text/css" href="img/favicon.ico" />
+	</head>
+	<!-- 搜索页 -->
+	<body>
+		<div class="total">
+			<div class="searchbar">
+				<a href="#" onclick="go()">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABfUlEQVR4AWL4//8/oH1zzA4gCMJgbNv239i2beP+R8gXczpmV79XB9ja3UEDDJCAIAQhCEF/TBAgCEEIUkSKFrEoahD0VFCdOLtmWxQh6E5Okzh7xCyC7n85T+lyL0jREJDT434NMr6cAde7mLHmXDDkfptX1AfkjPk+B9lyRn0fFO01Z8r9SVrRGJAzLaL9CrJ/q4XvlnPBX5IT4/qyqqgJyFkWcX5v8/aXsyKSXKc7FLUBORuGHAeC7K18y5DjQ5CiOiBnU6T6zSjav9WWSPebcrV3qz2R4Tcnba85hyLTb9Le/nL2RY7fqsbLcnJdl30MOSeiwG9dzD4hX1DitnCoSBDlhpwy15VVRY9YDvxWhd/xYAjiF2ORLnYviG3+45dTDopcNbisftvvRrrjlQmzNAeCSLmStP9OSZR9KBx+6cK95LH0TPMC7S80UNGCRxMnbcA0kg8iiFEEhlkYh2Kg7vd/STvPj2Qy1NvKUO+PgCAEIQhBCEIQghAE53kdVfEUUHFYAAAAAElFTkSuQmCC" style="height:.7rem;width:.7rem"/ >
+				</a>
+				<div>
+					<input type="text" name="text" id="text" placeholder="搜索商品名称" />
+				</div>
+				<span></span>
+			</div>
+			<div class="total-auto">
+				<div class="search">
+					<!-- 历史 -->
+			<div class="search-delete"  style="display: none;">
+				<span>搜索历史</span>
+				<img data-v-2d23ac17="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAADgUlEQVRYR+3Z28vmUxQH8M/MMA6JGIfEpEmOMykXoygkh2JqmpLzTLlQuGBC0cwfQAqFCy7mQjlOQtTQDBKKIik5S3LKMRrCOM3oO+1Hr6fn9z6//Zv3974unlW/notn77W+e+21117ru+epl3k4CMeVb48KFb/jvfJ9hx0Vc8VwrZyMm3Ea5tdOxna8hPV4tWZ+LdiD8QjOqDHSMPYFXIxv2+qqBXsqHsLh+Akv4oe2xnAATse++AKX4uW282vBnoIHcQQexVX4sa0x7I97cQE+xWV4pe38WrB7YwWW4im8WXlIYu9ErMQ72IRf+wIbvTGYLwelq+RgJhN0ygbZ1htwQlfrPc57C7cnbAZhcAXuxp49Gu2qehuuwYYB2HNwHw7tqrHHeV/hcmyZesCORL7/m3yMfJ1usDlbTFPqWoz98PYcIFuGrfh82PYosCeVWyohsRZ3zSLga3Fn2fbcbq9NtT0K7CV4oBQpz+C8WQT7NM4tOXw1Hh4HNoPuL4Oew9mzCPZZnFXsrSlO+9f8KM9OwLbcnd49uwS/4esxgBZhn3LKm+qKXsFeVLLFZ6VcfKMB8LHYjL9xPZ5sKGJ6BbsRFxYQqW03NIBNkXRb+S+p6Ub8MWJsr2CfwKpi9OpSWI/Cu670bfnvHlyHNI/DMgE78MjEs31dChPP9uXZtqkruTV9VGTOUlf6/hhP7XnlcEk3JS+l/c7C9ipp6/GG7rjX1LVbYVdyM/08TXueginFfH4z7q+Gy6NXsC3rk9bDJmBbu6pyYLVnc2jSKSS+ni+dQhXNUwlwMDz2AvbMUpGlUwgJOG2ncH5pJ8LOhI5MT/RLRwA101LrpgcLrRoWJh3LY+PAZmVZ0SGFTg89GcavbwkzGRo19P83hQ7Nzk7r2bTg6SqXlzIuCT2c6q6whuMWGlYx9fAdyBvF60iXvZOJmRonw4p2x62FM4iS94uisNx9SdjwOCQdRZySi+Ym/DkObP4/qhyuMDORD0vRHI9ni2ZKEmrxYAr3o4vS3IYJxY+GjTTRRwOGOgcsbHckqwwln/jNe8CuhEV2LO8SidNQ99nNSFjwHLCRjPo4mj6U/C04Hgtmyp0j9OS6fhdpf0Ldj5RxYAMwbHiegJLCjsHCGQSdpvEDhKbKk1VY7gDvBHYwKSf0QByG8AR5D+vyYDfQlxDK+9cn+BLfNzSQ/wH9D912ATugfSf4AAAAAElFTkSuQmCC">
+
+				</div>
+				<!-- 发现 -->
+				<div class="search-discover">
+					<span>搜索发现</span>
+					
+					<div class="discover">
+						<a>全部商品</a>
+						<a>手机</a>
+						<a>耳机</a>
+						<a>洗衣机</a>
+						<a>电视</a>
+						<a>红米</a>
+						<a>充电宝</a>
+						<a>空调</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+		<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+</html>

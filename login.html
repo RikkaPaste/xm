@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<!-- content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1 -->
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<!-- 需要放在头部 -->
+	<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
+	<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+	<title>小米账号 - 登录</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css"
+		media="(min-device-width:320px) and (max-device-width:600px)" />
+	<link rel="stylesheet" type="text/css" href="css/login/login.css" />
+	<!-- media="(min-device-width:320px) and (max-device-width:720px)" -->
+	<link rel="icon" type="text/css" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/login/next-step.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/login/max600.css" media="(min-device-width:600px)" />
+</head>
+
+<body>
+	<div class="APP-totalS">
+		<!-- 登录页 -->
+		<div class="APP">
+			<div class="ALL-APP">
+				<div class="APP-header-total">
+					<div class="APP-header">
+						<div class="APP-language">
+							<span>选择语言</span>
+							<svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M7 10l5 5 5-5z"></path>
+							</svg>
+						</div>
+
+						<div class="APP-help">
+							<span>
+								<svg class="MuiSvg-roos" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z">
+									</path>
+								</svg>
+							</span>
+							<a tabindex="0" aria-disabled="false">
+								<span>需要帮助</span><span></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="APP-total">
+					<div class="APP-LOGImg">
+						<svg class="MUN" width="48" height="48" viewBox="0 0 48 48" fill="none"
+							style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;">
+							<g id="48*48">
+								<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48"
+									height="48">
+									<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd"
+										d="M0 3.05176e-05H48V47.9998H0V3.05176e-05Z" fill="white"></path>
+								</mask>
+								<g mask="url(#mask0)">
+									<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd"
+										d="M42.9972 5.015C38.4683 0.503953 31.9571 0 24.0001 0C16.0329 0 9.51214 0.509889 4.98532 5.03265C0.459587 9.55464 0 16.0649 0 24.0234C0 31.9816 0.459587 38.4954 4.98719 43.018C9.51418 47.5421 16.0334 47.9998 24.0001 47.9998C31.9665 47.9998 38.4858 47.5421 43.013 43.018C47.5398 38.4939 48 31.9816 48 24.0234C48 16.0548 47.5343 9.53698 42.9972 5.015Z"
+										fill="#FF6900"></path>
+									<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd"
+										d="M22.2335 32.8946C22.2335 33.0556 22.0979 33.1892 21.9328 33.1892H17.8394C17.6715 33.1892 17.5353 33.0556 17.5353 32.8946V22.19C17.5353 22.0276 17.6715 21.8946 17.8394 21.8946H21.9328C22.0979 21.8946 22.2335 22.0276 22.2335 22.19V32.8946Z"
+										fill="white"></path>
+									<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd"
+										d="M30.248 32.8946C30.248 33.0556 30.1118 33.1892 29.9461 33.1892H26.0497C25.8826 33.1892 25.7464 33.0556 25.7464 32.8946V32.8546V23.6589C25.7423 22.0465 25.6501 20.3892 24.8177 19.5562C24.1019 18.8383 22.7672 18.6738 21.3787 18.6393H14.3157C14.149 18.6393 14.0144 18.7733 14.0144 18.9345V31.9287V32.8946C14.0144 33.0556 13.8769 33.1892 13.7102 33.1892H9.81124C9.64471 33.1892 9.51068 33.0556 9.51068 32.8946V15.1074C9.51068 14.9441 9.64471 14.8113 9.81124 14.8113H21.0604C24.0003 14.8113 27.0737 14.9454 28.5895 16.4632C30.1118 17.9877 30.248 21.0556 30.248 23.9989V32.8946Z"
+										fill="white"></path>
+									<path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd"
+										d="M38.2749 32.8946C38.2749 33.0556 38.1372 33.1892 37.9721 33.1892H34.0738C33.9072 33.1892 33.7718 33.0556 33.7718 32.8946V15.1074C33.7718 14.9441 33.9072 14.8113 34.0738 14.8113H37.9721C38.1372 14.8113 38.2749 14.9441 38.2749 15.1074V32.8946Z"
+										fill="white"></path>
+								</g>
+							</g>
+						</svg>
+						<div class="MUN-brief-comment"
+							style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;">
+							让每个人都能享受科技的乐趣</div>
+					</div>
+
+					<div class="APP-bottom-total">
+
+						<form class="form1">
+							<div class="bottom-total">
+								<div class="MI-register">小米账号登录</div>
+
+								<div class="ID">
+									<div class="ID-import">
+										<span>+86</span>
+										<input type="text" name="id" placeholder="请输入手机号/邮箱" />
+										<img style="width:.5rem;height:.5rem; position: absolute; right:.3rem; display: none;"
+											src="data:image/png;base64,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" />
+									</div>
+								</div>
+								<p style="padding: .2rem 0 0 .5rem;font-size: .3rem;color:red;display: none;">请输入手机号/邮箱
+								</p>
+
+								<div class="APP-agreement">
+									<input type="checkbox" name="agreement" value="1" />
+									<p>已阅读并同意小米账号 <a>用户协议</a> 和 <a>隐私政策</a></p>
+								</div>
+
+								<div class="ID-submit">
+									<div class="submit" type="submit">下一步</div>
+								</div>
+								<div class="forget">
+									<a>忘记账号?</a>
+								</div>
+
+
+								<div class="login">
+									<a onclick="loginUser(this)">用户名密码登录</a>&nbsp;|&nbsp;
+									<a onclick="register(this)">立即注册</a>
+								</div>
+
+								<div class="else-login">
+									<span>其他方式登录</span>
+									<div class="Choose-other">
+										<svg viewBox="0 0 46 46" width="1rem" height="1rem">
+											<path
+												d="M10.35 25.898c-.543.439-1.125 1.076-1.294 1.886-.23 1.109-.048 2.496 1.021 3.583 1.296 1.32 3.263 1.68 4.112 1.744 2.31.165 4.77-.978 6.626-2.285a14.633 14.633 0 003.162-3.133c-2.667-1.376-5.996-2.898-9.555-2.75-1.818.076-3.12.454-4.072.956zm33.821 6.09A22.878 22.878 0 0046.001 23C46 10.319 35.683 0 23 0S0 10.319 0 23c0 12.684 10.315 23 23 23 7.654 0 14.441-3.761 18.624-9.53-4.82-2.4-9.646-4.785-14.48-7.156-1.916 2.184-4.746 4.372-7.943 5.324-2.01.598-3.822.825-5.715.438-1.875-.383-3.257-1.261-4.062-2.142-.41-.449-.88-1.02-1.222-1.699.032.086.055.137.055.137s-.196-.337-.346-.876a4.202 4.202 0 01-.16-1.401c-.02-.362.005-.726.077-1.081.187-.91.575-1.967 1.58-2.952 2.203-2.157 5.154-2.274 6.684-2.265 2.265.014 6.201 1.005 9.515 2.178.918-1.957 1.507-4.048 1.886-5.44H13.717v-1.49h7.075v-2.982h-8.567v-1.489h8.565v-2.979c0-.41.081-.745.745-.745h3.352v3.724H34.2v1.49h-9.312v2.98h7.45s-.748 4.17-3.088 8.28c5.192 1.854 12.494 4.71 14.92 5.664z"
+												fill="#1989fa"></path>
+										</svg>
+
+									</div>
+								</div>
+							</div>
+						</form>
+
+
+						<form style="display: none;" class="form2">
+							<div class="bottom-total">
+								<div class="MI-register">小米账号登录</div>
+
+								<div class="ID-User">
+									<div class="ID-import-User">
+										<input type="text" name="user" placeholder="邮箱/手机号/小米ID" />
+										<img style="width:.5rem;height:.5rem; position: absolute; right:.3rem; display: none;"
+											src="data:image/png;base64,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" />
+									</div>
+								</div>
+								<p style="padding: .2rem 0 0 .5rem;color:red;display: none;font-size:.3rem">请输入账号
+								</p>
+
+
+								<div class="ID-PWD">
+									<div class="ID-import-pwd">
+										<input type="password" name="pwd" placeholder="请输入密码" />
+										<div class="yj" index="1">
+											<svg viewBox="-3 -10 63 56" width="100%" height="100%">
+												<g fill="none" fill-rule="evenodd">
+													<path
+														d="M3 22.974C7.044 11.382 18.55 3 30.2 3c11.65 0 23.155 8.382 27.199 19.974C53.328 34.593 41.71 43 30.199 43 18.69 43 7.072 34.593 3 22.974h0z"
+														stroke="currentColor" stroke-width="5" stroke-linecap="round"
+														stroke-linejoin="round"></path>
+													<path
+														d="M30.2 33.4c5.743 0 10.4-4.656 10.4-10.4 0-5.743-4.657-10.4-10.4-10.4-5.744 0-10.4 4.657-10.4 10.4 0 5.744 4.656 10.4 10.4 10.4z"
+														fill="currentColor" fill-rule="nonzero"></path>
+												</g>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<p style="padding: .2rem 0 0 .5rem;display: none;color:red;font-size:.3rem;">请输入登陆密码
+								</p>
+
+								<div class="APP-agreement">
+									<input type="checkbox" name="agreement2" value="1" />
+									<p>已阅读并同意小米账号 <a>用户协议</a> 和 <a>隐私政策</a></p>
+								</div>
+
+								<div class="ID-submit">
+									<div class="submitTWO" type="submit">登录</div>
+								</div>
+
+								<div class="login">
+									<a onclick="loginUser(this)">手机号登录</a>&nbsp;|&nbsp;
+									<a onclick="register(this)">立即注册</a>|&nbsp;<a>忘记密码</a>
+								</div>
+
+								<div class="else-login">
+									<span>其他方式登录</span>
+									<div class="Choose-other">
+										<svg viewBox="0 0 46 46" width="1rem" height="1rem">
+											<path
+												d="M10.35 25.898c-.543.439-1.125 1.076-1.294 1.886-.23 1.109-.048 2.496 1.021 3.583 1.296 1.32 3.263 1.68 4.112 1.744 2.31.165 4.77-.978 6.626-2.285a14.633 14.633 0 003.162-3.133c-2.667-1.376-5.996-2.898-9.555-2.75-1.818.076-3.12.454-4.072.956zm33.821 6.09A22.878 22.878 0 0046.001 23C46 10.319 35.683 0 23 0S0 10.319 0 23c0 12.684 10.315 23 23 23 7.654 0 14.441-3.761 18.624-9.53-4.82-2.4-9.646-4.785-14.48-7.156-1.916 2.184-4.746 4.372-7.943 5.324-2.01.598-3.822.825-5.715.438-1.875-.383-3.257-1.261-4.062-2.142-.41-.449-.88-1.02-1.222-1.699.032.086.055.137.055.137s-.196-.337-.346-.876a4.202 4.202 0 01-.16-1.401c-.02-.362.005-.726.077-1.081.187-.91.575-1.967 1.58-2.952 2.203-2.157 5.154-2.274 6.684-2.265 2.265.014 6.201 1.005 9.515 2.178.918-1.957 1.507-4.048 1.886-5.44H13.717v-1.49h7.075v-2.982h-8.567v-1.489h8.565v-2.979c0-.41.081-.745.745-.745h3.352v3.724H34.2v1.49h-9.312v2.98h7.45s-.748 4.17-3.088 8.28c5.192 1.854 12.494 4.71 14.92 5.664z"
+												fill="#1989fa"></path>
+										</svg>
+
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+		<img class="to-load" src="img/login/page_loading.gif" alt=""
+			style="position: fixed; top: 50%; left: 50%; margin-top: -16px; margin-left: -17px; height: 33px; width: 35px; border-radius: 100%; display: none;">
+		<!-- 下一步界面 -->
+
+		<!-- 验证码登录 -->
+
+
+
+
+		<div class="next-step-APP" style="display: none;">
+			<div class="ALL-APP">
+				<div class="APP-header-total-TWO">
+					<div class="APP-header-TWO">
+						<div class="APP-language">
+							<div class="return"></div>
+						</div>
+						<div class="APP-help">
+							<span style="width: .4rem;height:.4rem;	">
+								<svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+									style="color: rgba(0,0,0,0.5);">
+									<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 
+							2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 
+							4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 
+							14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 
+							1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66
+							 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 
+							 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 
+							 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33
+							  3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26
+							   2h-3.38z"></path>
+								</svg>
+							</span>
+							<span>
+								<svg class="MuiSvg-roos" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z">
+									</path>
+								</svg>
+							</span>
+							<a tabindex="0" aria-disabled="false">
+								<span>需要帮助</span><span></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="APP-total-TWO">
+					<div class="APP-bottom-total">
+
+						<form>
+							<div class="bottom-total">
+								<div class="MI-register-MS">小米账号登录</div>
+								<div class="nouvelle">
+									<span>验证码已发送至 +86 </span>
+									<a>修改</a>
+								</div>
+								<div class="IDYZ">
+									<div class="security-code">
+										<input type="text" name="code" placeholder="请输入验证码" />
+										<div
+											style=".5rem;line-height:.5rem; position: absolute; right:.3rem;color: #0B84FF;font-size: .3rem;">
+											重新发送</div>
+									</div>
+								</div>
+								<p style="padding: .2rem 0 0 .5rem;display: none;color:red;">请输入验证码</p>
+								<div class="APP-agreement-TWO">
+									<p>手机号已停用?</p>
+								</div>
+
+								<div class="ID-submit-code">
+									<div class="submitcode" type="submit">登录</div>
+								</div>
+
+								<div class="login">
+									<a onclick="loginUser(this)">用户名密码登录</a>&nbsp;|&nbsp;
+									<a>收不到验证码</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 用户条款 -->
+		<div class="KS" style="display: none;">请您同意用户条款</div>
+
+		<!-- 注册 -->
+		<div class="register-APP" style="display: none;">
+			<div class="ALL-APP">
+				<div class="APP-header-total-TWO">
+					<div class="APP-header-TWO">
+						<div class="APP-language">
+							<div class="return return2"></div>
+						</div>
+						<div class="APP-help">
+							<span style="width: .4rem;height:.4rem;	">
+								<svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+									style="color: rgba(0,0,0,0.5);">
+									<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 
+							2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 
+							4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 
+							14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 
+							1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66
+							 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 
+							 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 
+							 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33
+							  3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26
+							   2h-3.38z"></path>
+								</svg>
+							</span>
+							<span>
+								<svg class="MuiSvg-roos" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z">
+									</path>
+								</svg>
+							</span>
+							<a tabindex="0" aria-disabled="false">
+								<span>需要帮助</span><span></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="APP-total-TWO">
+					<div class="APP-bottom-total">
+
+						<form>
+							<div class="bottom-total">
+								<div class="MI-register-MS">注册小米账号</div>
+								<div class="nouvelle-register">
+									<span>系统会根据您选择的国家/地区的法律法规存储您的</span>
+								</div>
+
+								<div class="user-login-App">
+									<div class="login-total">
+										<div class="user-login">
+											<div class="ID-register">
+												<div class="ID-import-register  one">
+													<span>中国</span>
+												</div>
+											</div>
+
+											<div class="ID-register">
+												<div class="ID-import-register two">
+													<span>+86 / 邮箱</span>
+													<input type="text" name="id2" placeholder="请输入手机号 / 邮箱" />
+													<img style="width:.5rem;height:.5rem; position: absolute; right:.3rem; display: none;"
+														src="data:image/png;base64,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" />
+												</div>
+											</div>
+											<p
+												style="padding: .2rem 0 0 .5rem;font-size: .3rem;color:red;display: none;">
+												请输入手机号 / 或邮箱
+											</p>
+											<div class="IDYZ-register three">
+												<div class="security-code-register">
+													<input type="text" name="code2" placeholder="请输入短信验证码" />
+													<div
+														style=".5rem;line-height:.5rem; position: absolute; right:.3rem;color: #0B84FF;font-size: .3rem;">
+														获取验证码</div>
+												</div>
+											</div>
+											<p style="padding: .2rem 0 0 .5rem;display: none;color:red;">请输入验证码</p>
+											<div class="APP-agreement">
+												<input type="checkbox" name="agreement3" value="1" />
+												<p>已阅读并同意小米账号 <a>用户协议</a> 和 <a>隐私政策</a></p>
+											</div>
+
+											<div class="ID-submit-code">
+												<div class="submitregister" type="submit">下一步</div>
+											</div>
+
+											<div class="login">
+												<a>收不到验证码</a>
+											</div>
+										</div>
+
+										<div class="user-login">
+											<div class="ID-PWD">
+												<div class="ID-import-pwd">
+													<input type="password" name="pwd1" placeholder="请输入密码" />
+													<div class="yj" index="2">
+														<svg viewBox="-3 -10 63 56" width="100%" height="100%">
+															<g fill="none" fill-rule="evenodd">
+																<path
+																	d="M3 22.974C7.044 11.382 18.55 3 30.2 3c11.65 0 23.155 8.382 27.199 19.974C53.328 34.593 41.71 43 30.199 43 18.69 43 7.072 34.593 3 22.974h0z"
+																	stroke="currentColor" stroke-width="5"
+																	stroke-linecap="round" stroke-linejoin="round">
+																</path>
+																<path
+																	d="M30.2 33.4c5.743 0 10.4-4.656 10.4-10.4 0-5.743-4.657-10.4-10.4-10.4-5.744 0-10.4 4.657-10.4 10.4 0 5.744 4.656 10.4 10.4 10.4z"
+																	fill="currentColor" fill-rule="nonzero"></path>
+															</g>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="strength" style="display: none;">
+												<p
+													style="padding: .2rem 0 0 .5rem;display: none;color:red;font-size:.3rem;">
+													请输入密码
+												</p>
+												<div class="jss17"><span>密码安全等级：</span>
+													<div class="indextsx">
+														<div>低</div>
+														<div>中</div>
+														<div>高</div>
+													</div>
+												</div>
+											</div>
+											<div class="ID-PWD">
+												<div class="ID-import-pwd">
+													<input type="password" name="pwd1" placeholder="请输入确认密码" />
+													<div class="yj" index="3">
+														<svg viewBox="-3 -10 63 56" width="100%" height="100%">
+															<g fill="none" fill-rule="evenodd">
+																<path
+																	d="M3 22.974C7.044 11.382 18.55 3 30.2 3c11.65 0 23.155 8.382 27.199 19.974C53.328 34.593 41.71 43 30.199 43 18.69 43 7.072 34.593 3 22.974h0z"
+																	stroke="currentColor" stroke-width="5"
+																	stroke-linecap="round" stroke-linejoin="round">
+																</path>
+																<path
+																	d="M30.2 33.4c5.743 0 10.4-4.656 10.4-10.4 0-5.743-4.657-10.4-10.4-10.4-5.744 0-10.4 4.657-10.4 10.4 0 5.744 4.656 10.4 10.4 10.4z"
+																	fill="currentColor" fill-rule="nonzero"></path>
+															</g>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<p
+												style="padding: .2rem 0 0 .5rem;display: none;color:red;font-size:.3rem;">
+												请输入确认密码
+											</p>
+											<div style="margin: .5rem auto;height: .2rem;"></div>
+											<div class="ID-submit-code">
+												<div class="submitregister" type="submit">下一步</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="agreement-two">
+			<div class="agreement-confirms">
+				<div class="XXT">
+					<div class="user-agreement">
+						<div class="fz-xs">
+							<span>提示</span>
+							<span class="ts-messages"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/util.js"></script>
+
+</html>
